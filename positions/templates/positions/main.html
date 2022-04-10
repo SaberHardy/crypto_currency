@@ -11,7 +11,8 @@
                 <th scope="col">Name</th>
                 <th scope="col">Rank</th>
                 <th scope="col">Market cap</th>
-                <th scope="col">Price</th>
+                <th scope="col">Price $</th>
+                <th scope="col">Difference</th>
             </tr>
             </thead>
             <tbody>
@@ -23,6 +24,7 @@
                         <td>{{ data.market_cap_rank }}</td>
                         <td>{{ data.market_cap }}</td>
                         <td>{{ data.current_price }}</td>
+                        <td>{{ data.price_change_24h }}</td>
                     </tr>
                 {% endfor %}
             {% else %}
