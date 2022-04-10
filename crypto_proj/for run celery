@@ -1,0 +1,8 @@
+# for make celery project running perfect follow these steps:
+
+for celery beat
+
+1- celery -A crypto_proj beat -l info
+
+for celery worker
+2- celery -A crypto_proj worker -l info
